@@ -21,7 +21,7 @@ public class SafeInput
     */ 
    public static String getNonZeroLenString(Scanner pipe, String prompt)
    {
-       String retString = "";
+       String retString;
        do
        {
            System.out.print("\n" + prompt + ": ");
