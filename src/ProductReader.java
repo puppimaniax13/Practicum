@@ -27,7 +27,7 @@ public class ProductReader {
                 InputStream in = new BufferedInputStream(Files.newInputStream(file, CREATE));
                 BufferedReader reader = new BufferedReader(new InputStreamReader(in));
 
-                List<String> product;
+                List<String> products;
                 // Organizer for Product Reader
                 System.out.println("ID#\t\tName\tDesc\t\t\tCost");
                 System.out.println("-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-");
@@ -35,9 +35,9 @@ public class ProductReader {
 
                 while(reader.ready()){
                     rec = reader.readLine();
-                    product = Arrays.asList(rec.split(","));
-                    for (String s : product) {
-                        System.out.print(s + "\t");
+                    products = Arrays.asList(rec.split(","));
+                    for (String product : products) {
+                        System.out.printf("%s\t",product);
                     }
                     System.out.println();
                 }

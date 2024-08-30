@@ -35,7 +35,7 @@ public class PersonReader {
                     rec = reader.readLine();
                     persons = Arrays.asList(rec.split(","));
                     for (String person : persons) {
-                        System.out.print(person + "\t");
+                        System.out.printf("%s\t", person);
                     }
                     System.out.println();
                 }
